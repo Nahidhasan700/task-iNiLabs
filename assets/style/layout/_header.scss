@@ -1,0 +1,55 @@
+header
+{
+    .container 
+    {
+        width: 1400px;
+        padding-block: 24px;
+
+        @media screen and (max-width: 1401px) {
+            width: 1200px;
+        }
+    }
+    .grid-wrap
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+
+        *:nth-child(2)
+        {
+            justify-self: center;
+        }
+        *:nth-child(3)
+        {
+            justify-self: end;
+        }
+    }
+    .logo
+    {
+        height: 32px;
+    }
+    .navbar
+    {
+        gap: 16px;
+        .nav-item
+        {
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: 0.2s ease-in-out;
+
+            &:hover
+            {
+                background-color: #F8F8F8;
+            }
+        }
+
+    }
+
+    .button-wrap 
+    {
+        gap: 32px;
+        .contained-button 
+        {
+            height: 40px;
+        }
+    }
+}

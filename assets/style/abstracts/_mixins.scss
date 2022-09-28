@@ -1,0 +1,25 @@
+@mixin contentWidth() 
+{
+    // width: ;
+    // padding: ;
+    margin: 0 auto;
+
+    @media screen and (max-width:1920px) 
+    {
+        // width: ;
+        // padding: ;
+        margin: 0 auto;
+    }
+}
+
+@mixin gridCenter() {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+@mixin bgImg() {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

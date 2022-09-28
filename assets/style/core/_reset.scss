@@ -1,0 +1,70 @@
+html
+{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: clip;
+}
+body
+{
+    // height: 120vh;
+    background-color: var(--clr-white-000);
+    scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ::selection
+// {
+    
+// }
+
+
+/** scrollbar **/
+
+*  /*    firefox   */
+{
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    
+    &:hover 
+    {
+        scrollbar-width: thin;
+        scrollbar-color: var(--clr-primary) transparent;
+    }
+    
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar 
+{
+    width: 10px;
+}
+  
+*::-webkit-scrollbar-track 
+{
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb 
+{
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    border: 4px solid transparent;
+    transition: 0.2s ease-in-out;
+
+    &:hover
+    {
+        background-color: var(--clr-primary);
+        border-radius: 10px;
+        border: 4px solid transparent;
+    }
+    
+}
+  

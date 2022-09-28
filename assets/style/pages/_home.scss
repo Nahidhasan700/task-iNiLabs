@@ -1,0 +1,297 @@
+// banner section
+.banner
+{
+    padding-block: 128px;
+    align-items: center;
+
+    .text-part
+    {
+        .title-text
+        {
+            font-size: 100px;
+        }
+
+        .list 
+        {
+            margin-block: 32px 64px;
+            column-gap: 80px;
+            row-gap: 16px;
+        }
+        .button-wrap
+        {
+            gap: 32px;
+        }
+    }
+    .img-part
+    {
+        justify-self: end;
+    }
+}
+
+// features section
+.features
+{
+    padding-block: 160px;
+
+    .text-part
+    {
+        .title-text.headline1
+        {
+            font-size: 80px;
+            margin-bottom: 64px;
+        }
+        
+        .grid-col-2
+        {
+            gap: 32px;
+        }
+        .card 
+        {
+            padding: 32px;
+            border: 2px solid #E8E8E8;
+            border-radius: 16px;
+            transition: 0.2s ease-in-out;
+
+            .icon
+            {
+                --size: 50px;
+                width: var(--size);
+                height: var(--size);
+                background-color: rgba(var(--clr-primary-rgb), 0.15);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg 
+                {
+                    --size: 28px;
+                    width: var(--size);
+                    height: var(--size);
+                }
+            }
+            .title-text
+            {
+                margin-block: 16px 8px;
+            }
+
+            &:hover
+            {
+                background-color: #F8F8F8;
+            }
+        }
+    }
+    .img-part 
+    {
+        justify-self: center;
+    }
+}
+
+// transactions section
+.transactions
+{
+    background-color: rgba(var(--clr-primary-rgb), 0.15);
+    overflow: hidden;
+    
+    .container
+    {
+        padding-block: 128px;
+    }
+    .text-part
+    {
+        .desc-text
+        {
+            margin-bottom: 32px;
+        }
+        .list 
+        {
+            row-gap: 12px;
+        }
+    }
+    .img-part
+    {
+        position: relative;
+        img 
+        {
+            position: absolute;
+            top: 66%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// savings section
+.savings
+{
+    padding-top: 160px;
+
+    .grid-col-2
+    {
+        margin-bottom: 64px;
+    }
+    .text-part
+    {
+        .title-text
+        {
+            margin-block: 16px;
+        }
+    }
+    .button-part
+    {
+        align-self: flex-end;
+        justify-self: end;
+    }
+
+    .products
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: flex-start;
+        column-gap: 33px;
+    }
+    .product 
+    {
+        
+        .product_img
+        {
+            --size: 212px;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        &:nth-of-type(1)
+        {
+            .product_img
+            {
+                background-color: #E8F2EE;
+            }
+        }
+        &:nth-of-type(2)
+        {
+            .product_img
+            {
+                background-color: #F1DFDF;
+            }
+        }
+        &:nth-of-type(3)
+        {
+            .product_img
+            {
+                background-color: #DFE1F1;
+            }
+        }
+        &:nth-of-type(4)
+        {
+            .product_img
+            {
+                background-color: #DFEBF1;
+            }
+        }
+
+        .price 
+        {
+            margin-top: 4px;
+            font-size: 14px;
+            color: rgba(var(--clr-dark-rgb), 0.50);
+        }
+    }
+    .add-field
+    {
+        --size: 212px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 16px;
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .add 
+        {
+            --size: 40px;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            background-color: var(--clr-dark-000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg 
+            {
+                path 
+                {
+                    fill: white;
+                }
+            }
+        }
+        
+    }
+}
+
+// notifactions section 
+.notifactions
+{
+    padding-top: 160px;
+    align-items: center;
+    .text-part
+    {
+        .list
+        {
+            row-gap: 12px;
+            margin-block: 32px 48px;
+        }
+    }
+
+    .img-part
+    {
+        justify-self: end;
+    }
+}
+
+// tools 
+.tools
+{
+    padding-block: 160px;
+
+    .companies
+    {
+        column-gap: 16px;
+        
+        &:first-of-type
+        {
+            margin-bottom: 16px;
+        }
+    }
+    .company 
+    {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: #F8F8F8;
+        border-radius: 10px;
+        padding-inline: 16px;
+    }
+
+    .grid-col-2
+    {
+        margin-top: 64px;
+    }
+
+    .list-part
+    {
+        width: fit-content;
+        justify-self: center;
+        align-self: end;
+    }
+    .list
+    {
+        width: fit-content;
+        row-gap: 12px;
+    }
+}

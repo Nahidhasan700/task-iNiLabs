@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'dm-sans';
+    src: url('../fonts/DM_Sans/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/Inter/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+$ff-para: var(--ff-para);
+$ff-title: var(--ff-title);
+
+.title
+{
+    font-family: "dm-sans", sans-serif;
+}
+
+a
+{
+    font-family: "inter", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+}
+
+.headline1
+{
+    font-family: "dm-sans", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.025em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+.headline2
+{
+    font-family: "dm-sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.025em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+
+.body1
+{
+    font-family: "inter", sans-serif;
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: -0.025em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+.body2
+{
+    font-family: "inter", sans-serif;
+    font-size: 18px; 
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: -0.025em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+.body3
+{
+    font-family: "inter", sans-serif;
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.025em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
